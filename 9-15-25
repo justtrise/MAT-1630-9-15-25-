@@ -1,0 +1,33 @@
+def check_string(s):
+    if s.isalpha():
+        print("The string contains only letters.")
+    else:
+        print("The string does not contain only letters.")
+
+    if s.isdigit():
+        print("The string contains only numbers.")
+    else:
+        print("The string does not contain only numbers.")
+
+    if s.isalnum():
+        print("The string contains only letters and/or numbers.")
+    else:
+        print("The string contains characters other than letters and numbers.")
+
+    if s.islower() and s.isalpha():
+        print("The string contains only lowercase letters.")
+    else:
+        print("The string does not contain only lowercase letters.")
+
+    if s.isupper() and s.isalpha():
+        print("The string contains only uppercase letters.")
+    else:
+        print("The string does not contain only uppercase letters.")
+
+    if s.endswith('.'):
+        print("The string ends with a period.")
+    else:
+        print("The string does not end with a period.")
+
+user_input = input("Enter a string: ")
+check_string(user_input)
